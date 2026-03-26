@@ -1,0 +1,4 @@
+{"@timestamp":"2026-03-26T17:10:00+08:00","service":"order-service","level":"INFO","trace_id":"demo-001","user_id":"42","message":"hello from filebeat"}
+{"@timestamp":"2026-03-26T16:10:00+08:00","service":"order-service","level":"INFO","trace_id":"demo-001","user_id":"42","message":"hello from filebeat"}
+{"@timestamp":"2026-03-26T17:05:00+08:00","service":"order-service","level":"INFO","trace_id":"fb-test-002","user_id":"42","message":"hello from filebeat"}
+{"@timestamp":"2026-03-26T17:05:00+08:00","service":"order-service","level":"INFO","trace_id":"fb-test-002","user_id":"42","message":"hello from filebeat"}

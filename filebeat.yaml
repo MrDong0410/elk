@@ -1,0 +1,19 @@
+filebeat.inputs:
+  - type: filestream
+    id: app-json-logs
+    enabled: true
+    paths:
+      - /logs/*.log # 这里改成具体服务器的log地址，不过这里到时候应该是具体每一个集群起一个filebeat进程
+    parsers:
+      - ndjson:
+          target: ""
+          add_error_key: true
+
+output.elasticsearch:
+  hosts: ["http://elasticsearch:9200"]
+  index: "logs-demo"
+
+setup.ilm.enabled: false
+setup.template.enabled: false
+
+logging.level: info
